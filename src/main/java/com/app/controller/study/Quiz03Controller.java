@@ -1,5 +1,7 @@
 package com.app.controller.study;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/quiz03")
 public class Quiz03Controller {
 
+	
 	//1) 4개 경로 각자 개별 페이지 보유 한 버전
 	/*
 	@RequestMapping("/pathA")
@@ -129,4 +132,6 @@ public class Quiz03Controller {
 		return "quiz/quiz03/pathB";
 	}
 	*/
+
+	
 }
