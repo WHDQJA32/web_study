@@ -13,8 +13,9 @@
 	</insert>
 	
 	<select id="findRoomList" resultType="Room">
-		SELECT *
+		SELECT * 
 		FROM T_ROOM
 	</select>
+	
 	
 </mapper>

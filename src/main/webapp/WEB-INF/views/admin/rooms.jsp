@@ -11,8 +11,16 @@
 	<h1>관리자페이지</h1>
 	<h2>rooms 객실 목록</h2>
 	
-	<c:forEach>
-	
+	<c:forEach var="room" items="${roomList}">
+		
+		<p>${room.roomId} ${room.buildingNumber} ${room.roomNumber} ${room.floor} ${room.maxGuestCount} 
+		<c:choose>
+			<c:when test="${room.viewType == 'OCN'}">오션뷰</c:when>
+			<c:when test="${room.viewType == 'CTY'}">시티뷰</c:when>
+			<c:when test="${room.viewType == 'MOT'}">마운틴뷰</c:when>
+		</c:choose>
+		</p>
+		
 	</c:forEach>
 	
 </body>
