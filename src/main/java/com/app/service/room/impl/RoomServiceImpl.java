@@ -43,7 +43,7 @@ public class RoomServiceImpl implements RoomService {
 	}
 
 	@Override
-	public Room findRoomByRoomID(int roomId) {
+	public Room findRoomByRoomId(int roomId) {
 		// TODO Auto-generated method stub
 
 		Room room = roomDAO.findRoomByRoomId(roomId);

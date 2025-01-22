@@ -9,7 +9,8 @@ public interface RoomService {
 	
 	int saveRoom(Room room);
 	
-	Room findRoomByRoomID(int roomId);
+	Room findRoomByRoomId(int roomId);
 	
 	int removeRoom(int roomId);
+
 }
