@@ -20,7 +20,7 @@
 			<c:when test="${room.viewType == 'MOT'}">마운틴뷰</c:when>
 		</c:choose>
 	</p>
-
-	<button type="button" onClick="location.href='/admin/rooms'">객실목록보기</button>
+	
+	<button type="button" onClick="location.href='/admin/rooms'">객실 목록보기</button>
 </body>
 </html>
