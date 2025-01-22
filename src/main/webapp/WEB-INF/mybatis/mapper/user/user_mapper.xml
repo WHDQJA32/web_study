@@ -3,30 +3,44 @@
 
 <mapper namespace="user_mapper">
 
-
-	<!-- <insert id="saveUser" parameterType="User"> -->
-	<!-- insert into T_USER -->
-	<!-- (id, name, user_type) -->
-	<!-- values ( -->
-	<!-- #{id}, -->
-	<!-- #{name}, -->
-	<!-- 'CUS' -->
-	<!-- ) -->
-	<!-- </insert> -->
-
+	
+<!-- 	<insert id="saveUser" parameterType="User"> -->
+<!-- 		insert into T_USER -->
+<!-- 		(id, name, user_type)  -->
+<!-- 		values ( -->
+<!-- 			#{id}, -->
+<!-- 			#{name}, -->
+<!-- 			'CUS' -->
+<!-- 		) -->
+<!-- 	</insert> -->
+	
 	<insert id="saveUser" parameterType="User">
 		insert into T_USER
 		values (
-		#{id},
-		#{pw},
-		#{name},
-		#{userType}
+			#{id},
+			#{pw},
+			#{name},
+			#{userType}
 		)
 	</insert>
-
+	
 	<select id="findUserList" resultType="User">
-		SELECT * FROM T_USER
+		select * from T_USER
 	</select>
-
+	
+	
+	<select id="findUserById" resultType="User" parameterType="String">
+		select *
+		FROM T_USER
+		WHERE id = #{id}	
+	</select>
+	
+	
 
 </mapper>
+
+
+
+
+
+
